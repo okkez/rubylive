@@ -74,8 +74,8 @@ LH_ISO_PREPARER="live-helper 1.0.0; http://packages.qa.debian.org/live-helper"
 LH_ISO_PUBLISHER="Debian Live project; http://debian-live.alioth.debian.org/; debian-live@lists.debian.org"
 
 # $LH_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: Debian Live 20081028-23:16)
-LH_ISO_VOLUME="Debian Live 20081028-23:16"
+# (Default: RubyLive2009)
+LH_ISO_VOLUME="RubyLive2009"
 
 # $LH_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)

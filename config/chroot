@@ -30,7 +30,7 @@ LH_KEYRING_PACKAGES="debian-archive-keyring"
 
 # $LH_LANGUAGE: set language to use
 # (Default: empty)
-LH_LANGUAGE="ja_JP.UTF-8"
+LH_LANGUAGE="ja"
 
 # $LH_LINUX_FLAVOURS: set kernel flavour to use
 # (Default: autodetected)
@@ -45,12 +45,12 @@ LH_LINUX_PACKAGES="linux-image-2.6 aufs-modules-2.6 squashfs-modules-2.6"
 LH_PACKAGES="zsh lv less vim-gtk emacs22-gtk emacs22-common"
 
 # $LH_PACKAGES_LISTS: set package list to install
-# (Default: gnome-core)
-LH_PACKAGES_LISTS="gnome-core"
+# (Default: standard-x11)
+LH_PACKAGES_LISTS="standard-x11"
 
 # $LH_TASKS: set tasks to install
 # (Default: empty)
-LH_TASKS=""
+LH_TASKS="standard gnome-desktop desktop"
 
 # $LH_SECURITY: enable security updates
 # (Default: enabled)
