@@ -1,5 +1,8 @@
 # config/common - common options for live-helper(7)
 
+# LH_CONFIG_VERSION: internal version of the configuration file format
+LH_CONFIG_VERSION="1"
+
 # $LH_APT: set package manager
 # (Default: apt)
 LH_APT="apt"
@@ -70,7 +73,7 @@ LH_FDISK="fdisk"
 
 # $LH_LOSETUP: set losetup program
 # (Default: autodetected)
-LH_LOSETUP="losetup.orig"
+LH_LOSETUP="losetup"
 
 # $LH_MODE: set distribution mode
 # (Default: debian)
@@ -98,25 +101,29 @@ LH_TEMPLATES="/usr/share/live-helper/templates"
 
 # Live-helper options
 
-# $LH_BREAKPOINTS: enable breakpoints
+# $_BREAKPOINTS: enable breakpoints
 # (Default: disabled)
-#LH_BREAKPOINTS="disabled"
+#_BREAKPOINTS="disabled"
 
-# $LH_DEBUG: enable debug
+# $_DEBUG: enable debug
 # (Default: disabled)
-#LH_DEBUG="disabled"
+#_DEBUG="disabled"
 
-# $LH_FORCE: enable force
-# (Default: disabled)
-#LH_FORCE="disabled"
+# $_COLOR: enable color
+# (Default: false)
+#_COLOR="false"
 
-# $LH_QUIET: enable quiet
+# $_FORCE: enable force
 # (Default: disabled)
-LH_QUIET="disabled"
+#_FORCE="disabled"
 
-# $LH_VERBOSE: enable verbose
+# $_QUIET: enable quiet
 # (Default: disabled)
-#LH_VERBOSE="disabled"
+_QUIET="disabled"
+
+# $_VERBOSE: enable verbose
+# (Default: disabled)
+#_VERBOSE="disabled"
 
 # Internal stuff (FIXME)
 APT_OPTIONS="--yes"

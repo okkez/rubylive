@@ -45,6 +45,10 @@ LH_DEBIAN_INSTALLER_DISTRIBUTION="lenny"
 # (Default: )
 LH_DEBIAN_INSTALLER_PRESEEDFILE=""
 
+# $LH_DEBIAN_INSTALLER_GUI: toggle use of GUI debian-installer
+# (Default: enabled)
+LH_DEBIAN_INSTALLER_GUI="enabled"
+
 # $LH_ENCRYPTION: set encryption
 # (Default: disabled)
 LH_ENCRYPTION="disabled"

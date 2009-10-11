@@ -8,6 +8,10 @@ LH_CHROOT_FILESYSTEM="squashfs"
 # (Default: aufs)
 LH_UNION_FILESYSTEM="aufs"
 
+# $LH_VIRTUAL_ROOT_SIZE: set virtual-hdd filesystem size
+# (Default: 10000)
+LH_VIRTUAL_ROOT_SIZE="10000"
+
 # $LH_EXPOSED_ROOT: expose root as read only
 # (Default: disabled)
 LH_EXPOSED_ROOT="disabled"
@@ -22,7 +26,7 @@ LH_INTERACTIVE="disabled"
 
 # $LH_KEYRING_PACKAGES: set keyring packages
 # (Default: empty)
-LH_KEYRING_PACKAGES=""
+LH_KEYRING_PACKAGES="debian-archive-keyring"
 
 # $LH_LANGUAGE: set language to use
 # (Default: empty)
