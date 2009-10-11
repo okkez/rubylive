@@ -1,5 +1,5 @@
 #!/bin/sh
-IMAGE_PREFIX=debian_live-binary
+IMAGE_PREFIX=ruby_live-binary
 BUILDDATE=`date +%Y%m%d%H%M%S`
 lh_build noautoconfig 2>&1 | tee ${IMAGE_PREFIX}-${BUILDDATE}.buildlog
 # rename files
