@@ -14,6 +14,6 @@ lh_config noautoconfig \
        --mirror-chroot-security ${MIRROR_SECURITY} \
        --mirror-binary ${MIRROR_DEBIAN} \
        --mirror-binary-security ${MIRROR_SECURITY} \
-       --package-lists "gnome" \
+       --packages-lists "gnome" \
        ${@}
 
