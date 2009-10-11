@@ -1,0 +1,17 @@
+*.buildlog
+*.img
+*.iso
+*.list
+*.md5sum
+*.packages
+*~
+.*~
+.stage/
+binary/
+cache/
+chroot/
+config/binary
+config/bootstrap
+config/chroot
+config/common
+config/source
