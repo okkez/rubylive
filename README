@@ -1,0 +1,42 @@
+= これは何？
+
+RubyLive という Debian GNU/Linux ベースの LiveCD を作るために使用する live-helper の
+設定ファイル集です。
+
+== どうやって使うの？
+
+  $ rake -T
+
+コンソールで上記のコマンドを実行すると出来ることの一覧を表示します。
+
+== RubyLive でのカスタマイズポイント
+
+* 壁紙の変更
+  * RubyKaigi2009 の壁紙を使用している
+* デスクトップにワークショップで使用するアイコンが置いてある
+* デスクトップにるりまの成果物の最新版が置いてある
+* Ruby1.9.1, Ruby1.9.2dev を野良ビルドしたパッケージが入っている
+
+== カスタマイズしたい
+
+scripts/{build,clean,config} を書き換えると基本的な部分をカスタマイズできます。
+RubyLive に必要なことは書いてあるので変更する必要はあまりないでしょう。
+
+* config/chroot_local-hooks/
+  * インストールの最後の方で実行するフックスクリプトを置くディレクトリ。
+* config/chroot_local-includes/
+  * このディレクトリを root に見立てて LiveCD 環境にコピーしたいファイルを置くディレクトリ。
+* config/chroot_local-packages/
+  * 自分でビルドしたパッケージを置くディレクトリ。
+  * ここに置いたパッケージは自動的にインストールされるわけではない。
+  * lh_config --packages で指定する必要がある。script/config 参照。
+* config/chroot_local-packageslists/
+  * 特別にインストールしたいパッケージのリストを置くディレクトリ。
+
+
+== テストするには
+
+VirtualBox<http://www.virtualbox.org/> や qemu などの仮想化環境を使うと便利です。
+
+
+
