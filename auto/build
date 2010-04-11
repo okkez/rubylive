@@ -1,7 +1,7 @@
 #!/bin/sh
 IMAGE_PREFIX=ruby_live-binary
 BUILDDATE=`date +%Y%m%d%H%M%S`
-lh_build noautoconfig 2>&1 | tee ${IMAGE_PREFIX}-${BUILDDATE}.buildlog
+lh build noautoconfig 2>&1 | tee ${IMAGE_PREFIX}-${BUILDDATE}.buildlog
 # rename files
 if [ -f binary.iso ]; then
    mv binary.iso ${IMAGE_PREFIX}-${BUILDDATE}.iso

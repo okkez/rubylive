@@ -29,7 +29,7 @@ RubyLive に必要なことは書いてあるので変更する必要はあま�
 * config/chroot_local-packages/
   * 自分でビルドしたパッケージを置くディレクトリ。
   * ここに置いたパッケージは自動的にインストールされるわけではない。
-  * lh_config --packages で指定する必要がある。script/config 参照。
+  * lh config --packages で指定する必要がある。script/config 参照。
 * config/chroot_local-packageslists/
   * 特別にインストールしたいパッケージのリストを置くディレクトリ。
 
