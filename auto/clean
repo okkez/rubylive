@@ -1,5 +1,5 @@
 #!/bin/sh
-lh clean noautoconfig --all ${@}
+lb clean noauto --all ${@}
 # Remove generated files
 rm -f config/binary config/bootstrap config/chroot config/common config/source
 # Remove empty directories in config tree
