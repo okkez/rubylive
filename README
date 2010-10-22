@@ -1,7 +1,10 @@
+# -*- rd -*-
 = これは何？
 
-RubyLive という Debian GNU/Linux ベースの LiveCD を作るために使用する live-helper の
+RubyLive という Debian GNU/Linux ベースの LiveCD を作るために使用する live-build の
 設定ファイル集です。
+
+* live <http://live.debian.net/>
 
 == どうやって使うの？
 
@@ -12,14 +15,14 @@ RubyLive という Debian GNU/Linux ベースの LiveCD を作るために使用
 == RubyLive でのカスタマイズポイント
 
 * 壁紙の変更
-  * RubyKaigi2009 の壁紙を使用している
+  * RubyKaigi2010 の壁紙を使用している
 * デスクトップにワークショップで使用するアイコンが置いてある
 * デスクトップにるりまの成果物の最新版が置いてある
-* Ruby1.9.1, Ruby1.9.2dev を野良ビルドしたパッケージが入っている
+* Ruby1.9.2 を debian-backports から入れている。
 
 == カスタマイズしたい
 
-scripts/{build,clean,config} を書き換えると基本的な部分をカスタマイズできます。
+auto/{build,clean,config} を書き換えると基本的な部分をカスタマイズできます。
 RubyLive に必要なことは書いてあるので変更する必要はあまりないでしょう。
 
 * config/chroot_local-hooks/
@@ -29,7 +32,7 @@ RubyLive に必要なことは書いてあるので変更する必要はあま�
 * config/chroot_local-packages/
   * 自分でビルドしたパッケージを置くディレクトリ。
   * ここに置いたパッケージは自動的にインストールされるわけではない。
-  * lh config --packages で指定する必要がある。script/config 参照。
+  * lh config --packages で指定する必要がある。auto/config 参照。
 * config/chroot_local-packageslists/
   * 特別にインストールしたいパッケージのリストを置くディレクトリ。
 
