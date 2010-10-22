@@ -2,7 +2,7 @@
 MIRROR_DEBIAN="http://ftp.jp.debian.org/debian/"
 MIRROR_SECURITY="http://security.debian.org/"
 BOOTOPTION_LIVE="quiet locale=ja_JP.UTF-8 keyb=jp kmodel=jp106"
-PACKAGES="ruby1.9.1 ruby1.9.2"
+PACKAGES="ruby1.9.2"
 lb config noauto \
        --architecture i386 \
        --binary-images iso \
@@ -16,7 +16,7 @@ lb config noauto \
        --mirror-binary ${MIRROR_DEBIAN} \
        --mirror-binary-security ${MIRROR_SECURITY} \
        --packages-lists "gnome-core" \
-       --packages $PACKAGES \
+\#       --packages $PACKAGES \
        --debian-installer netinst \
        --debian-installer-distribution lenny \
        --debian-installer-gui enabled \
