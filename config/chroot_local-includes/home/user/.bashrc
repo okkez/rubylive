@@ -98,5 +98,5 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-export PATH=/usr/local/ruby191pre1/bin:/usr/local/ruby187/bin:$PATH
+export PATH=/var/lib/gems/1.9.1/bin:$PATH
 
