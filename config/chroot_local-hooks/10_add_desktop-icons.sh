@@ -1,6 +1,8 @@
 #!/bin/sh
 APP_INSTALL_DIR=/usr/share/applications/
 DESKTOP=/home/user/Desktop/
+mkdir -p $DESKTOP
+chown user:user
 cp ${APP_INSTALL_DIR}/{emacs22,emacs23,gedit,gnome-terminal,iceweasel,gvim}.desktop ${DESKTOP}
 
 IMAGE_FILE=/home/user/wallpapers/nari/B1920x1200.jpg
